@@ -44,7 +44,7 @@ pip install opencv-python
 
 
 ## Training
-> **Note that the location in the code where the path needs to be modified is shown below:**<br>
+> **Note that the locations in the code where the paths need to be modified are shown below:**<br>
 > `infer.py` in line 35.<br>
 > `local_configs/hfan/*.160k.py` in lines 3, 4, 69.<br>
 > `local_configs/hfan/*.refine.py` in lines 3, 67, 111.<br>
