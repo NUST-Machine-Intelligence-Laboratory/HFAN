@@ -44,6 +44,11 @@ pip install opencv-python
 
 
 ## Training
+> **Note that the location in the code where the path needs to be modified is shown below:**<br>
+> `infer.py` in line 35.<br>
+> `local_configs/hfan/*.160k.py` in lines 3, 4, 69.<br>
+> `local_configs/hfan/*.refine.py` in lines 3, 67, 111.<br>
+
 Download [MiT weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia) pretrained on ImageNet-1K, and put them in a folder `checkpoint/`.
 
 Train `HFAN-Small` 
