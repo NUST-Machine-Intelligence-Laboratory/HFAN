@@ -432,9 +432,7 @@ class HFAN(nn.Module):
 
     def forward(self, im, fw):
         im_pred = self.object_pred(im)
-        # fw_pred = self.object_pred(fw)
         im_context = self.css(im, im_pred)
-        # fw_context = self.spatial_gather_module(im, fw_pred)
         im_object_context = self.poc(im, im_context)
         fw_object_context = self.poc(fw, im_context)
 
