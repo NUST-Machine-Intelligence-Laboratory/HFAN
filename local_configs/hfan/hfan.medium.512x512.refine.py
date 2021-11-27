@@ -64,7 +64,7 @@ norm_cfg = dict(type='SyncBN', requires_grad=True)
 find_unused_parameters = True
 model = dict(
     type='EncoderDecoder',
-    pretrained='/hfan/checkpoints/mit_b2.pth',       # set your path
+    pretrained='/hfan/checkpoint/mit_b2.pth',       # set your path
     backbone=dict(
         type='HFANVOS',
         ori_type='mit_b2',
