@@ -55,17 +55,17 @@ Train `HFAN-Small`
 ```bash
 # two gpus training (V100 32G)
 ## First
-CUDA_VISIBLE_DEVICES=0,1 bash tools/dist_train.sh local_configs/hfan/hfan.small.512x512.160k.py 2 --seed 1208 --deterministic --work-dir hfan-small
+CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.small.512x512.160k.py 2 --seed 1208 --deterministic --work-dir hfan-small
 ## Second
-CUDA_VISIBLE_DEVICES=0,1 bash tools/dist_train.sh local_configs/hfan/hfan.small.512x512.refine.py 2 --seed 1208 --deterministic --work-dir hfan-small
+CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.small.512x512.refine.py 2 --seed 1208 --deterministic --work-dir hfan-small
 ```
 Train `HFAN-Medium`
 ```bash
 # two gpus training (V100 32G)
 ## First
-CUDA_VISIBLE_DEVICES=0,1 bash tools/dist_train.sh local_configs/hfan/hfan.medium.512x512.160k.py 2 --seed 1208 --deterministic --work-dir hfan-medium
+CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.medium.512x512.160k.py 2 --seed 1208 --deterministic --work-dir hfan-medium
 ## Second
-CUDA_VISIBLE_DEVICES=0,1 bash tools/dist_train.sh local_configs/hfan/hfan.medium.512x512.refine.py 2 --seed 1208 --deterministic --work-dir hfan-medium
+CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.medium.512x512.refine.py 2 --seed 1208 --deterministic --work-dir hfan-medium
 ```
 ## Testing
 Download [HFAN-Small](https://drive.google.com/file/d/1ha9at_kIY5E-gsBA2Iqx3iYoBKFFzZNy/view?usp=sharing), and put it in a folder `checkpoint/`.
