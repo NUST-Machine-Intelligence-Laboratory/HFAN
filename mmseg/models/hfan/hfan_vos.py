@@ -40,9 +40,9 @@ class HFANVOS(nn.Module):
 
 @HEADS.register_module()
 class HFANVOS_Head(BaseDecodeHead):
-    # im: only image; fw: only optical flow; ff: image and optical flow
-    # fa: hifi baseline of adaptation; fs: hifi baseline of alignment; ofa: hifi
-    # select_method = ['im', 'fw', 'ff', 'fa', 'fs', 'ofa']
+    # im: only image; fw: only optical flow; baseline: image and optical flow
+    # fam: baseline + FAM; fat: baseline + FAT; hfan: baseline + FAM + FAT
+    # select_method = ['im', 'fw', 'base', 'fam', 'fat', 'hfan']
     def __init__(self, feature_strides, select_method, **kwargs):
         super(HFANVOS_Head, self).__init__(input_transform='multiple_select', **kwargs)
         assert len(feature_strides) == len(self.in_channels)
@@ -82,7 +82,7 @@ class HFANVOS_Head(BaseDecodeHead):
             self.fat3 = FAT(channels=c3_in_channels, r=c3_in_channels // 16)
             self.fat4 = FAT(channels=c4_in_channels, r=c4_in_channels // 16)
         elif self.select_method == 'hfan':
-            # hifi: object-contextual feature alignment
+            # baseline + FAM + FAT
             self.hfan1 = HFAN(channels=c1_in_channels, r=c1_in_channels // 16)
             self.hfan2 = HFAN(channels=c2_in_channels, r=c2_in_channels // 16)
             self.hfan3 = HFAN(channels=c3_in_channels, r=c3_in_channels // 16)
