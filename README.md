@@ -54,6 +54,7 @@ Download [MiT weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27Y
 Train `HFAN-Small` 
 ```bash
 # two gpus training (V100 32G)
+# Please set OMP_NUM_THREADS=(1 or Your CPUs) when training with multiple GPUs.
 ## First
 CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.small.512x512.160k.py 2 --seed 1208 --deterministic --work-dir hfan-small
 ## Second
@@ -204,7 +205,7 @@ python infer.py \
 | MiT-b2 (SS/MS)      | 86.8/88.0 | 88.2/89.3 | 14.4/1.4 |     [model](https://drive.google.com/file/d/1j7aDOidyyeuQDx18XOLNrLyifswtzVP5/view?usp=sharing) / [mask](https://drive.google.com/file/d/1ml9TVtPGHO_Y7IvPcTIg4l6nnHb9KvUZ/view?usp=sharing) |
 | MiT-b3 (SS/MS)      | 86.8/88.2 | 88.8/90.0 | 10.6/1.0 |     [model](https://drive.google.com/file/d/1MMor1QZTpNAGwi_21r59q3618vgkI-ZK/view?usp=sharing) / [mask](https://drive.google.com/file/d/1DPtSMkTDExZrS3PU_wkxjNEe1Wmz7VUO/view?usp=sharing) |
 | Swin-Tiny (SS/MS)   | 86.0/87.2 | 87.3/87.9 | 12.8/1.1 |     [model]() / [mask]() |
-| ResNet-101 (SS/MS)  | 86.7/87.5 | 87.5/88.1 | 12.4/1.3 |     [model]() / [mask]() |
+| ResNet-101 (SS/MS)  | 86.7/87.5 | 87.5/88.1 | 12.4/1.3 |     [model](https://drive.google.com/file/d/13cdarmTRo-dBe4H4mKZlCEt-n4k3ZTKo/view?usp=sharing) / [mask](https://drive.google.com/file/d/1gLoaijF5ab7E_3Lc1ctNEFnFptKj7BgH/view?usp=sharing) |
 
 ## Visualize
 **Feature-level visualization**
