@@ -21,7 +21,7 @@ Please refer to the guidelines in [MMSegmentation v0.11.0](https://github.com/op
 To simplify the reproduction steps, we only need to install
 ```bash
 pip install torch==1.7.1 torchvision==0.8.2
-pip install mmcv-full==1.3.8
+pip install mmcv-full==1.3.8 -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.7.0/index.html
 pip install opencv-python
 ```
 
