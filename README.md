@@ -1,7 +1,7 @@
 #  HFAN: Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation
 
 ## Update
-> We provide a demo based on [Gradio](https://www.gradio.app/). You can download the test images in the demo directory and click [here](https://22164.gradio.app) to run it without any tedious configuration. Note: This link is currently only supported for 72 hours, so please alert me if the connection fails.<br>
+> We provide a demo based on [Gradio](https://www.gradio.app/). You can download the test images in the demo directory and click [here](https://22853.gradio.app) to run it without any tedious configuration. Note: This link is currently only supported for 72 hours, so please alert me if the connection fails.<br>
 
 
 ## Performance vs. Speed
