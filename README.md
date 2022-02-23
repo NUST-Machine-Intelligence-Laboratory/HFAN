@@ -5,7 +5,7 @@
 
 
 ## Performance vs. Speed
-![HFAN](assets/hfan_performance.png)
+![HFAN](assets/performance.png)
 
 Figure 1: Performance of HFAN-Small and HFAN-Medium on DAVIS-16.
 
