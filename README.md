@@ -15,7 +15,7 @@ This repository is the official PyTorch implementation of the anonymous paper:
 > **FAM** relies on sharing primary objects in images across modalities to align appearance and motion features  to address the mismatch of primary object positions between video frames and their corresponding optical flows. <br>
 > **FAT** constructs a feature adaptation weight to automatically enhance cross-modal features to tackle the modal mismatch problem between aligned feature maps.<br>
 
-![HFAN](assets/hfan_framework.png)
+![HFAN](assets/framework.png)
 
 Figure 2: The framework of HFAN.
 
