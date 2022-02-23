@@ -212,9 +212,11 @@ python infer.py \
 | Swin-Tiny (SS/MS)   | 86.0/87.2 | 87.3/87.9 | 12.8/1.1 |     [model]() / [mask]() |
 | ResNet-101 (SS/MS)  | 86.7/87.5 | 87.5/88.1 | 12.4/1.3 |     [model](https://drive.google.com/file/d/13cdarmTRo-dBe4H4mKZlCEt-n4k3ZTKo/view?usp=sharing) / [mask](https://drive.google.com/file/d/1gLoaijF5ab7E_3Lc1ctNEFnFptKj7BgH/view?usp=sharing) |
 
-## Visualize
+## Visualize Ablated Versions
 **Feature-level visualization**
 ![HFAN](assets/fm-libby.gif)
-
+**Mask-level visualization**
+![HFAN](assets/viz-libby.gif)
+## Qualitative Results
 **Mask-level visualization**
 ![HFAN](assets/libby.gif)
