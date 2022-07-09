@@ -1,7 +1,10 @@
-#  HFAN: Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation
+#  HFAN: Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation (ECCV 2022)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=CODE4UVOS.HFAN)
 
 ## Update
-> We provide a demo based on [Gradio](https://www.gradio.app/). You can download the test images in the demo directory and click [here](https://22853.gradio.app) to run it without any tedious configuration. Note: This link is currently only supported for 72 hours, so please alert me if the connection fails.<br>
+> This work has been accepted to ECCV 2022, we will update camera ready version soon.<br>
+
+> [Gensheng Pei](https://scholar.google.com/citations?user=ihU_QpsAAAAJ&hl=en), Yazhou Yao*, Guo-Sen Xie, Fumin Shen, Zhenmin Tang, Jinhui Tang. "Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation", European Conference on Computer Vision (ECCV), 2022.<br>
 
 
 ## Performance vs. Speed
