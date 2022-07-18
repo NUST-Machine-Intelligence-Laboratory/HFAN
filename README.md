@@ -1,8 +1,8 @@
 #  HFAN: Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation (ECCV 2022)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=CODE4UVOS.HFAN)
 
-## Update
-> This work has been accepted to ECCV 2022, we will update camera ready version soon.<br>
+## Introduction
+> This work has been accepted to ECCV 2022, and we will update the camera-ready version soon.<br>
 
 > [Gensheng Pei](https://scholar.google.com/citations?user=ihU_QpsAAAAJ&hl=en), Yazhou Yao*, Guo-Sen Xie*, Fumin Shen, Zhenmin Tang, Jinhui Tang. "Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation", European Conference on Computer Vision (ECCV), 2022.<br>
 
@@ -223,3 +223,14 @@ python infer.py \
 ## Qualitative Results
 **Mask-level visualization**
 ![HFAN](assets/libby.gif)
+
+## Citation
+If you find this useful in your research, please consider citing:
+```bash
+@inproceedings{
+title={Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation},
+author={Gensheng Pei, Yazhou Yao, Guo-Sen Xie, Fumin Shen, Zhenmin Tang, Jinhui Tang},
+booktitle={European Conference on Computer Vision (ECCV)},
+year={2022}
+}
+```
