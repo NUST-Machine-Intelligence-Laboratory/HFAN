@@ -1,5 +1,6 @@
 #  HFAN: Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation (ECCV 2022)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=CODE4UVOS.HFAN)
+
+## Note: Google Drive subscription has expired, and we have migrated models to Baidu Drive.
 
 ## Introduction
 > This work has been accepted to ECCV 2022, and we will update the camera-ready version soon.<br>
@@ -36,7 +37,7 @@ pip install opencv-python
 ## Dataset Preparation
 1. Download the DAVIS dataset from [DAVIS website](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip).
 2. Download the YouTube-VOS dataset from [YouTube-VOS website](https://youtube-vos.org/dataset/).
-3. To quickly reproduce the proposed method, we upload the processed data to Google Drive ([DAVIS](https://drive.google.com/file/d/15Yde0cXzKZDC-6GELHNq2OGvsr9u13Vf/view?usp=sharing) and [YouTube-VOS](https://drive.google.com/file/d/1aoeobaHLRYa-SMrG2R-Xlp7mcyD0mrNb/view?usp=sharing)). 
+3. To quickly reproduce the proposed method, we upload the processed data to Baidu Drive ([DAVIS](https://pan.baidu.com/s/1bVFkq82DBy7Oyi82KeBhZw?pwd=2tns) and [YouTube-VOS](https://pan.baidu.com/s/1pET4ZRvSFld6yPDuL2AHAA?pwd=luss)). 
 4. Please ensure the datasets are organized as following format.
 ```
 |DAVIS2SEG
@@ -57,7 +58,7 @@ pip install opencv-python
 > `local_configs/hfan/*.160k.py` in lines 3, 4, 69.<br>
 > `local_configs/hfan/*.refine.py` in lines 3, 67, 111.<br>
 
-Download [MiT weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia) pretrained on ImageNet-1K, and put them in a folder `checkpoint/`.
+Download [MiT weights](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/EvOn3l1WyM5JpnMQFSEO5b8B7vrHw9kDaJGII-3N9KNhrg?e=cpydzZ) pretrained on ImageNet-1K, and put them in a folder `checkpoint/`.
 
 Train `HFAN-Small` 
 ```bash
@@ -77,7 +78,7 @@ CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_confi
 CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=16 bash tools/dist_train.sh local_configs/hfan/hfan.medium.512x512.refine.py 2 --seed 1208 --deterministic --work-dir hfan-medium
 ```
 ## Testing
-Download [HFAN-Small](https://drive.google.com/file/d/1ha9at_kIY5E-gsBA2Iqx3iYoBKFFzZNy/view?usp=sharing), and put it in a folder `checkpoint/`.
+Download [HFAN-Small](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9), and put it in a folder `checkpoint/`.
 
 Evaluate `HFAN-Small`:
 ```bash
@@ -93,7 +94,7 @@ python infer.py \
     --checkpoint checkpoint/HFAN-s-converted.pth \
     --output_dir ./output_path/hfan-small-MS --aug-test
 ```
-Download [HFAN-Medium](https://drive.google.com/file/d/1j7aDOidyyeuQDx18XOLNrLyifswtzVP5/view?usp=sharing), and put it in a folder `checkpoint/`.
+Download [HFAN-Medium](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9), and put it in a folder `checkpoint/`.
 
 Evaluate `HFAN-Medium` 
 ```bash
@@ -169,9 +170,9 @@ python infer.py \
 
 | Input             | J Mean ↑ | ΔJ   | F Mean ↑ | ΔF    |  download |
 | :---------------- | -------: | ---: | -------: | ----: | --------: |
-| Image frame only  |     79.1 | -3.9 |     79.8 |  -3.5 |     [model](https://drive.google.com/file/d/17bEepfyfVNDXbGbZ5e4eoTdPFx_Yh5q2/view?usp=sharing) / [mask](https://drive.google.com/file/d/1hWw5Vr42R389fzFj4O9qaV97gP9oMYJ_/view?usp=sharing) |
-| Optical flow only |     77.9 | -5.1 |     76.5 |  -6.8 |     [model](https://drive.google.com/file/d/13yf17uW29OYio6glDVfQcLhi8OxF7j_6/view?usp=sharing) / [mask](https://drive.google.com/file/d/1jqhA2Ee_zSpqrmavB2JNu4o7RAzj-u7O/view?usp=sharing) |
-| Baseline          |     83.0 |    - |     83.3 |     - |     [model](https://drive.google.com/file/d/1I1iNxOBFECQDYdyQ6j5WbcsRtjboEBEH/view?usp=sharing) / [mask](https://drive.google.com/file/d/1RDO1NxCFOzoqXQbiPwTYnyF4nAo0v30o/view?usp=sharing) |
+| Image frame only  |     79.1 | -3.9 |     79.8 |  -3.5 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| Optical flow only |     77.9 | -5.1 |     76.5 |  -6.8 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| Baseline          |     83.0 |    - |     83.3 |     - |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
 
 **Efficacy of Crucial Modules**
 
@@ -199,21 +200,21 @@ python infer.py \
 
 | Variants          | J Mean ↑ | ΔJ   | F Mean ↑ | ΔF    |  download |
 | :---------------- | -------: | ---: | -------: | ----: | --------: |
-| Baseline          |     83.0 |    - |     83.3 |     - |     [model](https://drive.google.com/file/d/1I1iNxOBFECQDYdyQ6j5WbcsRtjboEBEH/view?usp=sharing) / [mask](https://drive.google.com/file/d/1RDO1NxCFOzoqXQbiPwTYnyF4nAo0v30o/view?usp=sharing)|
-| Baseline + FAM    |     85.2 | +2.2 |     85.6 |  +2.3 |     [model](https://drive.google.com/file/d/1Y7PS8DVpkN99AVn93-j2CPAdGY3t-Hbn/view?usp=sharing) / [mask](https://drive.google.com/file/d/1o1RlL64Xw1QvUER5n7zBXNlRX1A0PYym/view?usp=sharing) |
-| Baseline + FAT    |     85.0 | +2.0 |     86.1 |  +2.8 |     [model](https://drive.google.com/file/d/1UZzzy9-Julf83WeCwvse5R6zeUAnkO-F/view?usp=sharing) / [mask](https://drive.google.com/file/d/10ptZyXijX_GMjXCtikznFFnJPU-zCqWz/view?usp=sharing) |
-| Baseline + HFAN   |     86.2 | +3.2 |     87.1 |  +3.8 |     [model](https://drive.google.com/file/d/1ha9at_kIY5E-gsBA2Iqx3iYoBKFFzZNy/view?usp=sharing) / [mask](https://drive.google.com/file/d/16-z2Tc3yqDMBYX09g0rX_5hYFzpn-GmP/view?usp=sharing) |
+| Baseline          |     83.0 |    - |     83.3 |     - |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m)|
+| Baseline + FAM    |     85.2 | +2.2 |     85.6 |  +2.3 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| Baseline + FAT    |     85.0 | +2.0 |     86.1 |  +2.8 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| Baseline + HFAN   |     86.2 | +3.2 |     87.1 |  +3.8 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
 
 **Efficacy of Backbone**
 
 | Backbone            | J Mean ↑  |  F Mean ↑ |    FPS ↑ |  download |
 | :-------------------| --------: | --------: | -------: | --------: |
-| MiT-b0 (SS/MS)      | 81.5/83.4 | 80.8/82.3 | 24.0/3.4 |     [model]() / [mask]() |
-| MiT-b1 (SS/MS)      | 86.2/87.1 | 87.1/87.7 | 20.8/2.5 |     [model](https://drive.google.com/file/d/1ha9at_kIY5E-gsBA2Iqx3iYoBKFFzZNy/view?usp=sharing) / [mask](https://drive.google.com/file/d/1G6esIKu_eyFWo6KE28YQqKeYbESaOWSS/view?usp=sharing) |
-| MiT-b2 (SS/MS)      | 86.8/88.0 | 88.2/89.3 | 14.4/1.4 |     [model](https://drive.google.com/file/d/1j7aDOidyyeuQDx18XOLNrLyifswtzVP5/view?usp=sharing) / [mask](https://drive.google.com/file/d/1ml9TVtPGHO_Y7IvPcTIg4l6nnHb9KvUZ/view?usp=sharing) |
-| MiT-b3 (SS/MS)      | 86.8/88.2 | 88.8/90.0 | 10.6/1.0 |     [model](https://drive.google.com/file/d/1MMor1QZTpNAGwi_21r59q3618vgkI-ZK/view?usp=sharing) / [mask](https://drive.google.com/file/d/1DPtSMkTDExZrS3PU_wkxjNEe1Wmz7VUO/view?usp=sharing) |
-| Swin-Tiny (SS/MS)   | 86.0/87.2 | 87.3/87.9 | 12.8/1.1 |     [model]() / [mask]() |
-| ResNet-101 (SS/MS)  | 86.7/87.5 | 87.5/88.1 | 12.4/1.3 |     [model](https://drive.google.com/file/d/13cdarmTRo-dBe4H4mKZlCEt-n4k3ZTKo/view?usp=sharing) / [mask](https://drive.google.com/file/d/1gLoaijF5ab7E_3Lc1ctNEFnFptKj7BgH/view?usp=sharing) |
+| MiT-b0 (SS/MS)      | 81.5/83.4 | 80.8/82.3 | 24.0/3.4 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| MiT-b1 (SS/MS)      | 86.2/87.1 | 87.1/87.7 | 20.8/2.5 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| MiT-b2 (SS/MS)      | 86.8/88.0 | 88.2/89.3 | 14.4/1.4 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| MiT-b3 (SS/MS)      | 86.8/88.2 | 88.8/90.0 | 10.6/1.0 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| Swin-Tiny (SS/MS)   | 86.0/87.2 | 87.3/87.9 | 12.8/1.1 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
+| ResNet-101 (SS/MS)  | 86.7/87.5 | 87.5/88.1 | 12.4/1.3 |     [model](https://pan.baidu.com/s/1FFdeziezAaBXbfoaQprZ6g?pwd=8we9) / [mask](https://pan.baidu.com/s/1WgJNe7T5ABB935KCjI1PoQ?pwd=ey2m) |
 
 ## Visualize Ablated Versions
 **Feature-level visualization**
