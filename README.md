@@ -3,7 +3,6 @@
 ## Note: Google Drive subscription has expired, and we have migrated models to Baidu Drive.
 
 ## Introduction
-> This work has been accepted to ECCV 2022, and we will update the camera-ready version soon.<br>
 
 > [Gensheng Pei](https://scholar.google.com/citations?user=ihU_QpsAAAAJ&hl=en), Yazhou Yao*, Guo-Sen Xie*, Fumin Shen, Zhenmin Tang, Jinhui Tang. "Hierarchical Feature Alignment Network for Unsupervised Video Object Segmentation", European Conference on Computer Vision (ECCV), 2022.<br>
 
